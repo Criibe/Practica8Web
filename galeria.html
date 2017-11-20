@@ -7,31 +7,42 @@
 	<title>GALERIA CSGO 2CM8</title>
 	<link rel="stylesheet" type="text/css" href="galeria.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
 </head>
 
 <body class="">
 
+<header class="cabecera">
 
-<header class="dark-primary-color cabecera">
-	<h1>Galeria</h1>
+	<h1 class="celda tituloBanner" padding-right="40px">Vida alternativa</h1>
+
+	<nav class="celda navbar">
+		<a href="#" class="celda link" id="inicioLink">Inicio</a>
+		<a href="#" class="celda link" >Acerca de</a>
+		<a href="#" class="celda link">Terapias</a>
+		<a href="#" class="celda link" >Medicina</a>
+		<a href="#" class="celda link">Contacto</a>
+	</nav>
+
 </header>
 
-<nav class="navbar cabecera default-primary-color">
-	<a href="www.google.com.mx" class="celda" >Google</a>
-	<a href="www.facebook.com" class="celda" >Facebook</a>
-	<a href="www.facebook.com/csbFotos" class="celda" >[CSB]</a>
-</nav>
 
 <section class="cuerpo">
-	<article>
 
-	<img src="imagenes/foto1.jpeg" class="imagenes" id="foto">
-	<br>
 
-	<button onclick="irAlPrincipio()" class="celda boton">PRIMERA</button>
-	<button onclick="cambiarImagenIzquierda()" class="celda boton"><<</button>
-	<button onclick="cambiarImagenDerecha()" class="celda boton">>></button>
-	<button onclick="irAlFinal()" class="celda boton">ÚLTIMA</button>
+	<article class="galery">
+
+		<figure class="celda">
+			<img src="imagenes/foto1.jpeg" class="imagenes" id="foto">
+		</figure>
+
+	<nav class="celda">
+		<button onclick="irAlPrincipio()" class="boton">PRIMERA</button>
+		<button onclick="cambiarImagenIzquierda()" class="boton"><<</button>
+		<button onclick="cambiarImagenDerecha()" class="boton">>></button>
+		<button onclick="irAlFinal()" class="boton">ÚLTIMA</button>
+	</nav>
 
 	</article>
 </section>
