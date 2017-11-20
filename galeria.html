@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>GALERIA CSGO 2CM8</title>
+	<link rel="stylesheet" type="text/css" href="galeria.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+
+<body class="">
+
+
+<header class="dark-primary-color cabecera">
+	<h1>Galeria</h1>
+</header>
+
+<nav class="navbar cabecera default-primary-color">
+	<a href="www.google.com.mx" class="celda" >Google</a>
+	<a href="www.facebook.com" class="celda" >Facebook</a>
+	<a href="www.facebook.com/csbFotos" class="celda" >[CSB]</a>
+</nav>
+
+<section class="cuerpo">
+	<article>
+
+	<img src="imagenes/foto1.jpeg" class="imagenes" id="foto">
+	<br>
+
+	<button onclick="irAlPrincipio()" class="celda boton">PRIMERA</button>
+	<button onclick="cambiarImagenIzquierda()" class="celda boton"><<</button>
+	<button onclick="cambiarImagenDerecha()" class="celda boton">>></button>
+	<button onclick="irAlFinal()" class="celda boton">ÚLTIMA</button>
+
+	</article>
+</section>
+
+
+<!--JAVASCRIPT-->
+<script type="text/javascript" language="javascript">
+
+	iterador = 1
+
+	function cambiarImagenDerecha(){
+
+		document.getElementById("foto").classList.add('slideRightFirst');
+
+		/*Poner un delay de 0.5*/
+		/*Remover la animacion*/
+
+		setTimeout(function(){
+			document.getElementById("foto").classList.remove('slideRightFirst');
+		}, 200);
+
+
+		if(iterador != 20){
+
+			iterador += 1;
+
+			document.images[0].src = "imagenes/foto"+  (iterador) +".jpeg";
+			document.getElementById("foto").classList.add('slideRightSecond');
+
+		}
+
+		else{
+
+			iterador = 1;
+
+			document.images[0].src = "imagenes/foto1.jpeg";
+			document.getElementById("foto").classList.add('slideRightSecond');
+		}
+
+			if (document.getElementById("foto").classList.contains('slideRightFirst')){
+				document.getElementById("foto").classList.remove('slideRightSecond');
+
+			}
+			if (document.getElementById("foto").classList.contains('slideLeftSecond')){
+				document.getElementById("foto").classList.remove('slideRightSecond');
+			}
+	}
+
+	function cambiarImagenIzquierda(){
+
+		document.getElementById("foto").classList.add('slideLeftFirst');
+
+		/*Poner un delay de 0.5*/
+		/*Remover la animacion*/
+
+		setTimeout(function(){
+			document.getElementById("foto").classList.remove('slideLeftFirst');
+		}, 200);
+
+		if(iterador != 1){
+
+			if(iterador == 20){
+				iterador = 19;
+				document.images[0].src = "imagenes/foto" + (iterador) + ".jpeg";
+			}
+
+			else{
+				iterador -= 1;
+				document.images[0].src = "imagenes/foto" + (iterador) + ".jpeg";
+			}
+
+			document.getElementById("foto").classList.add('slideLeftSecond');
+
+		}
+
+
+		else{
+
+			iterador = 20;	
+
+			document.getElementById("foto").classList.add('slideLeftFirst');
+
+
+			/*Poner un delay de 0.5*/
+			/*Remover la animacion*/
+
+			setTimeout(function(){
+				document.getElementById("foto").classList.remove('slideLeftFirst');
+			}, 200);
+
+
+
+			document.images[0].src = "imagenes/foto20.jpeg";
+			document.getElementById("foto").classList.add('slideLeftSecond');
+
+		}
+
+		/*Ver que pasa*/
+
+		if (document.getElementById("foto").classList.contains('slideLeftFirst')){
+			document.getElementById("foto").classList.remove('slideLeftSecond');
+
+		}
+		if (document.getElementById("foto").classList.contains('slideLeftSecond')){
+			document.getElementById("foto").classList.remove('slideLeftSecond');
+		}
+	}
+
+	function irAlPrincipio(){
+
+		document.getElementById("foto").classList.add('slideLeftFirst');
+
+		/*Poner un delay de 0.5*/
+		/*Remover la animacion*/
+
+		setTimeout(function(){
+			document.getElementById("foto").classList.remove('slideLeftFirst');
+		}, 200);
+
+		document.images[0].src = "imagenes/foto1.jpeg";
+		iterador = 1;
+
+		document.getElementById("foto").classList.add('slideLeftSecond');
+
+		if (document.getElementById("foto").classList.contains('slideLeftFirst')){
+			document.getElementById("foto").classList.remove('slideLeftSecond');
+		}
+		
+		if (document.getElementById("foto").classList.contains('slideLeftSecond')){
+			document.getElementById("foto").classList.remove('slideLeftSecond');
+		}
+
+	}
+
+	function irAlFinal(){
+
+		document.getElementById("foto").classList.add('slideLeftFirst');
+
+		/*Poner un delay de 0.5*/
+		/*Remover la animacion*/
+
+		setTimeout(function(){
+			document.getElementById("foto").classList.remove('slideLeftFirst');
+		}, 200);
+
+		document.images[0].src = "imagenes/foto20.jpeg";
+		iterador = 20;
+
+		document.getElementById("foto").classList.add('slideLeftSecond');
+
+
+		if (document.getElementById("foto").classList.contains('slideLeftFirst')){
+			document.getElementById("foto").classList.remove('slideLeftSecond');
+		}
+		
+		if (document.getElementById("foto").classList.contains('slideLeftSecond')){
+			document.getElementById("foto").classList.remove('slideLeftSecond');
+		}
+	}
+</script>
+
+</body>
+
+</html>
