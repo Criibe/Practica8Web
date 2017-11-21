@@ -259,3 +259,16 @@ body{
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
+
+
+section.informacion {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablaFoot{
+  margin-left: auto;
+  margin-right: auto;
+}
