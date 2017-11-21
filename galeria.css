@@ -191,7 +191,11 @@ body{
 }
 
 .pie{
-	height: 40px;
+	height: 200px;
+  background-image: url(imagenes/bambu.jpg);
+  background-size: cover;                  
+  background-repeat: no-repeat;
+
 }
 
 .galery{
