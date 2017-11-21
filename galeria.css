@@ -11,12 +11,49 @@
   background-repeat: no-repeat;
   }
 
+body{
+    margin: auto;
+  }
 
 .cabecera h1{
   padding-left: 70px;
 	text-align: center;
 	color: white;
   margin-top: 10px;
+  font-family: 'Pacifico', cursive;
+
+}
+
+.info{
+  text-align: center;
+  width: 600px;
+  float: center;
+}
+
+.titulos{
+  padding-top: 10px;
+  font-family: 'Pacifico', cursive;
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.redLinks{
+  color: red;
+}
+
+
+.barraDerecha{
+  float: right;
+  width: 400px;
+}
+
+.textEnphasis{
+  color: #ABD0E7;
+}
+
+.textGray{
+  color: gray;
 }
 
 
@@ -36,6 +73,10 @@
   font-size: 15px;
   color: white;
   text-decoration: none;
+}
+
+.lastSection{
+  padding-top: 20px;
 }
 
 #inicioLink{
@@ -157,13 +198,10 @@
   background: #EEEEF0;
 }
 
+
+
 .boton {
-  background: #FF9809;
-  background-image: -webkit-linear-gradient(top, #FF9809, ##FF9800);
-  background-image: -moz-linear-gradient(top, #FF9809, ##FF9800);
-  background-image: -ms-linear-gradient(top, #FF9809, ##FF9800);
-  background-image: -o-linear-gradient(top, #FF9809, ##FF9800);
-  background-image: linear-gradient(to bottom, #FF9809, ##FF9800);
+  background: #66A7C5;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -184,6 +222,30 @@
   background-image: linear-gradient(to bottom, #F57C00, #F57C00);
   text-decoration: none;
 }
+
+.redButton{
+  background: #EE2E2F;
+  background-image: -webkit-linear-gradient(top, #EE2E2F, #EE2E2F);
+  background-image: -moz-linear-gradient(top, #EE2E2F, #EE2E2F);
+  background-image: -ms-linear-gradient(top, #EE2E2F, #EE2E2F);
+  background-image: -o-linear-gradient(top, #EE2E2F, #EE2E2F);
+  background-image: linear-gradient(to bottom, #EE2E2F, #EE2E2F);
+  color: #ffffff;
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+}
+
+.redButton:hover{
+  background: #e02d30;
+  background-image: -webkit-linear-gradient(top, #e02d30, #e02d30);
+  background-image: -moz-linear-gradient(top, #e02d30, #e02d30);
+  background-image: -ms-linear-gradient(top, #e02d30, #e02d30);
+  background-image: -o-linear-gradient(top, #e02d30, #e02d30);
+  background-image: linear-gradient(to bottom, #e02d30, #e02d30);
+  text-decoration: none;  
+}
+
 
 .dark-primary-color    { background: #F57C00; }
 .default-primary-color { background: #FF9800; }
